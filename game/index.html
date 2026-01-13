@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <title>Leopard Cat Run — Seb’s blog</title>
+  <meta name="description" content="Minigioco: corri col gatto leopardato, schiva ostacoli, raccogli scintille." />
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+  <header class="top">
+    <a class="back" href="../">← Torna al blog</a>
+    <div class="title">Leopard Cat Run</div>
+    <div class="hint">Spazio / Tocca</div>
+  </header>
+
+  <main class="wrap">
+    <div class="hud">
+      <div class="pill">Punti: <span id="score">0</span></div>
+      <div class="pill">Best: <span id="best">0</span></div>
+      <button class="pill btn" id="pauseBtn">Pausa</button>
+    </div>
+
+    <canvas id="c" width="960" height="540"></canvas>
+
+    <section class="panel" id="panel">
+      <h1>Leopard Cat Run</h1>
+      <p>Schiva gli ostacoli e raccogli le scintille. Più vai avanti, più accelera.</p>
+      <div class="controls">
+        <div class="chip">Desktop: <b>Spazio</b> salta, <b>P</b> pausa</div>
+        <div class="chip">Mobile: <b>tocca</b> per saltare</div>
+      </div>
+      <button class="start" id="startBtn">Inizia</button>
+      <p class="quote" id="quote"></p>
+    </section>
+  </main>
+
+  <footer class="foot">© Seb’s blog</footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
