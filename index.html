@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Seb's blog: pensieri sulla vita</title>
+  <meta name="description" content="Pensieri sulla vita: riflessioni sul senso della vita, sulla vita dopo la morte e sulla realizzazione di sé." />
+  <meta property="og:title" content="Seb's blog: pensieri sulla vita" />
+  <meta property="og:description" content="Riflessioni sul senso della vita, sulla morte e su cosa significhi realizzare se stessi." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Markdown renderer (client-side) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a class="logo" href="#/">SEB</a>
+
+      <div class="links">
+        <a href="#/">Home</a>
+        <a href="#/chi-sono">Chi sono</a>
+        <a href="#/blog">Blog</a>
+      </div>
+
+      <button class="menuBtn" id="menuBtn" aria-label="Apri menu">☰</button>
+    </nav>
+
+    <div class="mobileMenu" id="mobileMenu">
+      <a href="#/">Home</a>
+      <a href="#/chi-sono">Chi sono</a>
+      <a href="#/blog">Blog</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="view" class="view"></section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Sebastiano</p>
+  </footer>
+</body>
+</html>
